@@ -19,7 +19,9 @@ name = "integration_tests"
 required-features = ["model-fetching"]
 
 [dependencies]
-onnxruntime-sys = { version = "0.0.14", path = "../onnxruntime-sys" }
+onnxruntime-sys = { version = "0.0.14", path = "../onnxruntime-sys", features = [
+  "generate-bindings",
+] }
 
 lazy_static = "1.4"
 ndarray = "0.15.3"
